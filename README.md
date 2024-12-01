@@ -5,7 +5,6 @@ initially forked from [jesseweisberg/moveo_ros](https://github.com/jesseweisberg
 ## How to Use:
 
 ### Setting Up Arctos Simulation with Motion Planning
-![moveit_screenshot.jpg](/moveit_screenshot.jpg)
 
 1. Make sure you have ROS properly installed with a working workspace. This repository assumes ROS Melodic on Ubuntu 18.04, so make any necessary adjustments if you are using a different configuration. Place the 'arctos_ros' package in the 'src' directory of your catkin workspace.
 
