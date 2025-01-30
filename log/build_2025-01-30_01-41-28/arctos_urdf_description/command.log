@@ -1,0 +1,1 @@
+Invoking command in '/home/stewart/Repositories/pincer/build/arctos_urdf_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/stewart/Repositories/pincer/build/arctos_urdf_description -- -j8 -l8

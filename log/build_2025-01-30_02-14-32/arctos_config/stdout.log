@@ -1,0 +1,56 @@
+-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/stewart/Repositories/pincer/build/arctos_config
+-- Install configuration: ""
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/ament_index/resource_index/package_run_dependencies/arctos_config
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/ament_index/resource_index/parent_prefix_path/arctos_config
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/environment/ament_prefix_path.sh
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/environment/ament_prefix_path.dsv
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/environment/path.sh
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/environment/path.dsv
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/local_setup.bash
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/local_setup.sh
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/local_setup.zsh
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/local_setup.dsv
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/package.dsv
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/ament_index/resource_index/packages/arctos_config
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/cmake/arctos_configConfig.cmake
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/cmake/arctos_configConfig-version.cmake
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/package.xml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/arctos_urdf_moveit_sensor_manager.launch.xml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/warehouse.launch
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/trajectory_execution.launch.xml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/planning_context.launch
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/move_group.launch
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/moveit.rviz
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/pilz_industrial_motion_planner_planning_pipeline.launch.xml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/moveit_rviz.launch
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/chomp_planning_pipeline.launch.xml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/fake_moveit_controller_manager.launch.xml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/joystick_control.launch
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/default_warehouse_db.launch
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/gazebo.launch
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/demo.launch
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/warehouse_settings.launch.xml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/ompl_planning_pipeline.launch.xml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/planning_pipeline.launch.xml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/sensor_manager.launch.xml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/arctos_urdf_moveit_controller_manager.launch.xml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/run_benchmark_ompl.launch
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/ros_controllers.launch
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/launch/demo_gazebo.launch
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/config
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/config/chomp_planning.yaml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/config/fake_controllers.yaml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/config/arctos_urdf.srdf
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/config/sensors_3d.yaml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/config/ros_controllers.yaml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/config/cartesian_limits.yaml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/config/kinematics.yaml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/config/joint_limits.yaml
+-- Installing: /home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/config/ompl_planning.yaml

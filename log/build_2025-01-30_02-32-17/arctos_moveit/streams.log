@@ -1,0 +1,16 @@
+[0.012s] Invoking command in '/home/stewart/Repositories/pincer/build/arctos_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stewart/Repositories/pincer/src/arctos_moveit -DCMAKE_INSTALL_PREFIX=/home/stewart/Repositories/pincer/install/arctos_moveit
+[0.030s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.249s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.254s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.304s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.328s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.339s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.654s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:192 (message):
+[0.654s]   rosidl_generate_interfaces() the passed dependency 'sensor_msgs' has not
+[0.654s]   been found before using find_package()
+[0.654s] Call Stack (most recent call first):
+[0.654s]   CMakeLists.txt:68 (rosidl_generate_interfaces)
+[0.654s] 
+[0.654s] [0m
+[0.654s] -- Configuring incomplete, errors occurred!
+[0.664s] Invoked command in '/home/stewart/Repositories/pincer/build/arctos_moveit' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stewart/Repositories/pincer/src/arctos_moveit -DCMAKE_INSTALL_PREFIX=/home/stewart/Repositories/pincer/install/arctos_moveit

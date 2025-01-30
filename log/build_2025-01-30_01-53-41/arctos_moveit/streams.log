@@ -1,0 +1,9 @@
+[0.010s] Invoking command in '/home/stewart/Repositories/pincer/build/arctos_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stewart/Repositories/pincer/src/arctos_moveit -DCMAKE_INSTALL_PREFIX=/home/stewart/Repositories/pincer/install/arctos_moveit
+[0.023s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.288s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.386s] [31mCMake Error at CMakeLists.txt:53 (add_message_files):
+[0.386s]   Unknown CMake command "add_message_files".
+[0.386s] 
+[0.386s] [0m
+[0.387s] -- Configuring incomplete, errors occurred!
+[0.392s] Invoked command in '/home/stewart/Repositories/pincer/build/arctos_moveit' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stewart/Repositories/pincer/src/arctos_moveit -DCMAKE_INSTALL_PREFIX=/home/stewart/Repositories/pincer/install/arctos_moveit

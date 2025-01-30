@@ -1,0 +1,249 @@
+[0.095s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build'][0m
+[0.095s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7762f642d910>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7762f6556150>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7762f6556150>>, mixin_verb=('build',))[0m
+[0.126s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.126s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.126s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.126s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.126s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[0.126s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.126s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/stewart/Repositories/pincer'
+[0.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[0.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[0.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[0.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[0.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[0.126s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[0.127s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[0.127s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(examples) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(examples) by extension 'ignore'
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(examples) by extension 'ignore_ament_install'
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(examples) by extensions ['colcon_pkg']
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(examples) by extension 'colcon_pkg'
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(examples) by extensions ['colcon_meta']
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(examples) by extension 'colcon_meta'
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(examples) by extensions ['ros']
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(examples) by extension 'ros'
+[0.147s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(examples) by extensions ['cmake', 'python']
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(examples) by extension 'cmake'
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(examples) by extension 'python'
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(examples) by extensions ['python_setup_py']
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(examples) by extension 'python_setup_py'
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_config) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_config) by extension 'ignore'
+[0.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_config) by extension 'ignore_ament_install'
+[0.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_config) by extensions ['colcon_pkg']
+[0.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_config) by extension 'colcon_pkg'
+[0.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_config) by extensions ['colcon_meta']
+[0.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_config) by extension 'colcon_meta'
+[0.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_config) by extensions ['ros']
+[0.149s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_config) by extension 'ros'
+[0.151s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/arctos_config' with type 'ros.ament_cmake' and name 'arctos_config'[0m
+[0.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_moveit) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_moveit) by extension 'ignore'
+[0.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_moveit) by extension 'ignore_ament_install'
+[0.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_moveit) by extensions ['colcon_pkg']
+[0.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_moveit) by extension 'colcon_pkg'
+[0.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_moveit) by extensions ['colcon_meta']
+[0.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_moveit) by extension 'colcon_meta'
+[0.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_moveit) by extensions ['ros']
+[0.152s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_moveit) by extension 'ros'
+[0.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mFound ROS schema reference in package manifest in 'src/arctos_moveit'[0m
+[0.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mWARNING[0m [33mFailed to parse ROS package manifest in 'src/arctos_moveit': Error(s) in package 'src/arctos_moveit/package.xml':
+Error(s):
+- The manifest of package "arctos_moveit" (with format version 1) must not contain the following tags: member_of_group, exec_depend
+- Either update to a newer format or replace <exec_depend> tags with <run_depend> tags.[0m
+[0.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_moveit) by extensions ['cmake', 'python']
+[0.153s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_moveit) by extension 'cmake'
+[0.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_moveit) by extension 'python'
+[0.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/arctos_moveit' with type 'cmake' and name 'arctos_moveit'[0m
+[0.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_urdf_description) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_urdf_description) by extension 'ignore'
+[0.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_urdf_description) by extension 'ignore_ament_install'
+[0.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_urdf_description) by extensions ['colcon_pkg']
+[0.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_urdf_description) by extension 'colcon_pkg'
+[0.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_urdf_description) by extensions ['colcon_meta']
+[0.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_urdf_description) by extension 'colcon_meta'
+[0.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_urdf_description) by extensions ['ros']
+[0.154s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/arctos_urdf_description) by extension 'ros'
+[0.155s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/arctos_urdf_description' with type 'ros.ament_cmake' and name 'arctos_urdf_description'[0m
+[0.155s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[0.155s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[0.155s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[0.155s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[0.155s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[0.167s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[0.167s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[0.169s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 285 installed packages in /opt/ros/jazzy[0m
+[0.170s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_moveit' build argument 'cmake_args' from command line to 'None'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_moveit' build argument 'cmake_target' from command line to 'None'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_moveit' build argument 'cmake_clean_first' from command line to 'False'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_moveit' build argument 'cmake_force_configure' from command line to 'False'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_moveit' build argument 'ament_cmake_args' from command line to 'None'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'arctos_moveit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/stewart/Repositories/pincer/build/arctos_moveit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/stewart/Repositories/pincer/install/arctos_moveit', 'merge_install': False, 'path': '/home/stewart/Repositories/pincer/src/arctos_moveit', 'symlink_install': False, 'test_result_base': None}[0m
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_urdf_description' build argument 'cmake_args' from command line to 'None'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_urdf_description' build argument 'cmake_target' from command line to 'None'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_urdf_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_urdf_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_urdf_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_urdf_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_urdf_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_urdf_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_urdf_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.204s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'arctos_urdf_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/stewart/Repositories/pincer/build/arctos_urdf_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/stewart/Repositories/pincer/install/arctos_urdf_description', 'merge_install': False, 'path': '/home/stewart/Repositories/pincer/src/arctos_urdf_description', 'symlink_install': False, 'test_result_base': None}[0m
+[0.205s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_config' build argument 'cmake_args' from command line to 'None'
+[0.205s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_config' build argument 'cmake_target' from command line to 'None'
+[0.205s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.205s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.205s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.205s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.205s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.205s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.205s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'arctos_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.205s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'arctos_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/stewart/Repositories/pincer/build/arctos_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/stewart/Repositories/pincer/install/arctos_config', 'merge_install': False, 'path': '/home/stewart/Repositories/pincer/src/arctos_config', 'symlink_install': False, 'test_result_base': None}[0m
+[0.205s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[0.206s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[0.206s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/stewart/Repositories/pincer/src/arctos_urdf_description' with build type 'ament_cmake'
+[0.206s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/stewart/Repositories/pincer/src/arctos_urdf_description'
+[0.208s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.208s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.208s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.211s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/stewart/Repositories/pincer/src/arctos_moveit'
+[0.211s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.211s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.219s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/stewart/Repositories/pincer/build/arctos_urdf_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/stewart/Repositories/pincer/build/arctos_urdf_description -- -j8 -l8[0m
+[0.222s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/stewart/Repositories/pincer/build/arctos_moveit': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stewart/Repositories/pincer/src/arctos_moveit -DCMAKE_INSTALL_PREFIX=/home/stewart/Repositories/pincer/install/arctos_moveit[0m
+[0.265s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/stewart/Repositories/pincer/build/arctos_urdf_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/stewart/Repositories/pincer/build/arctos_urdf_description -- -j8 -l8[0m
+[0.280s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/stewart/Repositories/pincer/build/arctos_urdf_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/stewart/Repositories/pincer/build/arctos_urdf_description[0m
+[0.294s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(arctos_urdf_description)
+[0.295s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/stewart/Repositories/pincer/build/arctos_urdf_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/stewart/Repositories/pincer/build/arctos_urdf_description[0m
+[0.298s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_urdf_description' for CMake module files
+[0.299s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_urdf_description' for CMake config files
+[0.300s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('arctos_urdf_description', 'cmake_prefix_path')
+[0.300s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/hook/cmake_prefix_path.ps1'
+[0.301s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/hook/cmake_prefix_path.dsv'
+[0.302s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/hook/cmake_prefix_path.sh'
+[0.303s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_urdf_description/bin'
+[0.303s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_urdf_description/lib/pkgconfig/arctos_urdf_description.pc'
+[0.304s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_urdf_description/lib/python3.12/site-packages'
+[0.304s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_urdf_description/bin'
+[0.305s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/package.ps1'
+[0.306s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/package.dsv'
+[0.307s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/package.sh'
+[0.309s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/package.bash'
+[0.310s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/package.zsh'
+[0.311s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/colcon-core/packages/arctos_urdf_description)
+[0.312s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(arctos_urdf_description)
+[0.312s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_urdf_description' for CMake module files
+[0.314s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_urdf_description' for CMake config files
+[0.314s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('arctos_urdf_description', 'cmake_prefix_path')
+[0.315s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/hook/cmake_prefix_path.ps1'
+[0.315s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/hook/cmake_prefix_path.dsv'
+[0.316s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/hook/cmake_prefix_path.sh'
+[0.317s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_urdf_description/bin'
+[0.317s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_urdf_description/lib/pkgconfig/arctos_urdf_description.pc'
+[0.318s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_urdf_description/lib/python3.12/site-packages'
+[0.318s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_urdf_description/bin'
+[0.318s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/package.ps1'
+[0.319s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/package.dsv'
+[0.320s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/package.sh'
+[0.321s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/package.bash'
+[0.322s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/package.zsh'
+[0.322s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/colcon-core/packages/arctos_urdf_description)
+[0.323s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/stewart/Repositories/pincer/src/arctos_config' with build type 'ament_cmake'
+[0.323s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/stewart/Repositories/pincer/src/arctos_config'
+[0.324s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.324s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.336s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/stewart/Repositories/pincer/build/arctos_config': AMENT_PREFIX_PATH=/home/stewart/Repositories/pincer/install/arctos_urdf_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/stewart/Repositories/pincer/install/arctos_urdf_description:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stewart/Repositories/pincer/src/arctos_config -DCMAKE_INSTALL_PREFIX=/home/stewart/Repositories/pincer/install/arctos_config[0m
+[0.691s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/stewart/Repositories/pincer/build/arctos_config' returned '0': AMENT_PREFIX_PATH=/home/stewart/Repositories/pincer/install/arctos_urdf_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/stewart/Repositories/pincer/install/arctos_urdf_description:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stewart/Repositories/pincer/src/arctos_config -DCMAKE_INSTALL_PREFIX=/home/stewart/Repositories/pincer/install/arctos_config[0m
+[0.693s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/stewart/Repositories/pincer/build/arctos_config': AMENT_PREFIX_PATH=/home/stewart/Repositories/pincer/install/arctos_urdf_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/stewart/Repositories/pincer/install/arctos_urdf_description:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/stewart/Repositories/pincer/build/arctos_config -- -j8 -l8[0m
+[0.761s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/stewart/Repositories/pincer/build/arctos_config' returned '0': AMENT_PREFIX_PATH=/home/stewart/Repositories/pincer/install/arctos_urdf_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/stewart/Repositories/pincer/install/arctos_urdf_description:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/stewart/Repositories/pincer/build/arctos_config -- -j8 -l8[0m
+[0.763s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/stewart/Repositories/pincer/build/arctos_config': AMENT_PREFIX_PATH=/home/stewart/Repositories/pincer/install/arctos_urdf_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/stewart/Repositories/pincer/install/arctos_urdf_description:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/stewart/Repositories/pincer/build/arctos_config[0m
+[0.786s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(arctos_config)
+[0.786s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_config' for CMake module files
+[0.787s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/stewart/Repositories/pincer/build/arctos_config' returned '0': AMENT_PREFIX_PATH=/home/stewart/Repositories/pincer/install/arctos_urdf_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/stewart/Repositories/pincer/install/arctos_urdf_description:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/stewart/Repositories/pincer/build/arctos_config[0m
+[0.788s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_config' for CMake config files
+[0.788s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('arctos_config', 'cmake_prefix_path')
+[0.788s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/hook/cmake_prefix_path.ps1'
+[0.789s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/hook/cmake_prefix_path.dsv'
+[0.790s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/hook/cmake_prefix_path.sh'
+[0.791s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_config/bin'
+[0.791s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_config/lib/pkgconfig/arctos_config.pc'
+[0.791s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_config/lib/python3.12/site-packages'
+[0.792s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_config/bin'
+[0.792s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/package.ps1'
+[0.793s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/package.dsv'
+[0.794s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/package.sh'
+[0.795s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/package.bash'
+[0.795s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/package.zsh'
+[0.796s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/stewart/Repositories/pincer/install/arctos_config/share/colcon-core/packages/arctos_config)
+[0.797s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(arctos_config)
+[0.797s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_config' for CMake module files
+[0.798s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_config' for CMake config files
+[0.799s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('arctos_config', 'cmake_prefix_path')
+[0.799s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/hook/cmake_prefix_path.ps1'
+[0.800s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/hook/cmake_prefix_path.dsv'
+[0.800s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/hook/cmake_prefix_path.sh'
+[0.801s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_config/bin'
+[0.801s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_config/lib/pkgconfig/arctos_config.pc'
+[0.802s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_config/lib/python3.12/site-packages'
+[0.802s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/stewart/Repositories/pincer/install/arctos_config/bin'
+[0.803s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/package.ps1'
+[0.804s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/package.dsv'
+[0.805s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/package.sh'
+[0.805s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/package.bash'
+[0.806s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/stewart/Repositories/pincer/install/arctos_config/share/arctos_config/package.zsh'
+[0.807s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/stewart/Repositories/pincer/install/arctos_config/share/colcon-core/packages/arctos_config)
+[2.604s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/stewart/Repositories/pincer/build/arctos_moveit' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stewart/Repositories/pincer/src/arctos_moveit -DCMAKE_INSTALL_PREFIX=/home/stewart/Repositories/pincer/install/arctos_moveit[0m
+[2.614s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[2.615s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[2.615s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '1'[0m
+[2.615s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[2.626s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.626s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.626s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[2.654s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[2.654s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/stewart/Repositories/pincer/install/local_setup.ps1'
+[2.656s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/stewart/Repositories/pincer/install/_local_setup_util_ps1.py'
+[2.659s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/stewart/Repositories/pincer/install/setup.ps1'
+[2.660s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/stewart/Repositories/pincer/install/local_setup.sh'
+[2.661s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/stewart/Repositories/pincer/install/_local_setup_util_sh.py'
+[2.663s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/stewart/Repositories/pincer/install/setup.sh'
+[2.665s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/stewart/Repositories/pincer/install/local_setup.bash'
+[2.665s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/stewart/Repositories/pincer/install/setup.bash'
+[2.667s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/stewart/Repositories/pincer/install/local_setup.zsh'
+[2.668s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/stewart/Repositories/pincer/install/setup.zsh'

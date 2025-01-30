@@ -1,0 +1,20 @@
+[0.011s] Invoking command in '/home/stewart/Repositories/pincer/build/arctos_urdf_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/stewart/Repositories/pincer/build/arctos_urdf_description -- -j8 -l8
+[0.068s] Invoked command in '/home/stewart/Repositories/pincer/build/arctos_urdf_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/stewart/Repositories/pincer/build/arctos_urdf_description -- -j8 -l8
+[0.083s] Invoking command in '/home/stewart/Repositories/pincer/build/arctos_urdf_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/stewart/Repositories/pincer/build/arctos_urdf_description
+[0.096s] -- Install configuration: ""
+[0.096s] -- Up-to-date: /home/stewart/Repositories/pincer/install/arctos_urdf_description/share/ament_index/resource_index/package_run_dependencies/arctos_urdf_description
+[0.096s] -- Up-to-date: /home/stewart/Repositories/pincer/install/arctos_urdf_description/share/ament_index/resource_index/parent_prefix_path/arctos_urdf_description
+[0.096s] -- Up-to-date: /home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/environment/ament_prefix_path.sh
+[0.096s] -- Up-to-date: /home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/environment/ament_prefix_path.dsv
+[0.096s] -- Up-to-date: /home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/environment/path.sh
+[0.096s] -- Up-to-date: /home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/environment/path.dsv
+[0.097s] -- Up-to-date: /home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/local_setup.bash
+[0.097s] -- Up-to-date: /home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/local_setup.sh
+[0.097s] -- Up-to-date: /home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/local_setup.zsh
+[0.097s] -- Up-to-date: /home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/local_setup.dsv
+[0.097s] -- Installing: /home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/package.dsv
+[0.097s] -- Up-to-date: /home/stewart/Repositories/pincer/install/arctos_urdf_description/share/ament_index/resource_index/packages/arctos_urdf_description
+[0.097s] -- Up-to-date: /home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/cmake/arctos_urdf_descriptionConfig.cmake
+[0.097s] -- Up-to-date: /home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/cmake/arctos_urdf_descriptionConfig-version.cmake
+[0.097s] -- Up-to-date: /home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/package.xml
+[0.100s] Invoked command in '/home/stewart/Repositories/pincer/build/arctos_urdf_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/stewart/Repositories/pincer/build/arctos_urdf_description

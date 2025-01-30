@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from arctos_moveit/msg/ArmJointState.msg
+// generated code does not contain a copyright notice
+
+
+module arctos_moveit {
+  module msg {
+    struct ArmJointState {
+      int16 position1;
+
+      int16 position2;
+
+      int16 position3;
+
+      int16 position4;
+
+      int16 position5;
+
+      int16 position6;
+
+      int16 position7;
+    };
+  };
+};

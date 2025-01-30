@@ -1,0 +1,6 @@
+{
+  "package_name": "arctos_moveit",
+  "non_idl_tuples": [
+    "/home/stewart/Repositories/pincer/src/arctos_moveit:msg/ArmJointState.msg"
+  ]
+}

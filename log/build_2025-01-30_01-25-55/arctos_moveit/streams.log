@@ -1,0 +1,71 @@
+[0.013s] Invoking command in '/home/stewart/Repositories/pincer/build/arctos_moveit': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stewart/Repositories/pincer/src/arctos_moveit -DCMAKE_INSTALL_PREFIX=/home/stewart/Repositories/pincer/install/arctos_moveit
+[0.133s] -- The C compiler identification is GNU 13.3.0
+[0.241s] -- The CXX compiler identification is GNU 13.3.0
+[0.263s] -- Detecting C compiler ABI info
+[0.349s] -- Detecting C compiler ABI info - done
+[0.357s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.358s] -- Detecting C compile features
+[0.358s] -- Detecting C compile features - done
+[0.366s] -- Detecting CXX compiler ABI info
+[0.453s] -- Detecting CXX compiler ABI info - done
+[0.477s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.477s] -- Detecting CXX compile features
+[0.479s] -- Detecting CXX compile features - done
+[0.491s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.644s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.909s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time thread 
+[0.913s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.975s] Error parsing '/home/stewart/Repositories/pincer/src/arctos_moveit/package.xml':
+[3.715s] Traceback (most recent call last):
+[3.715s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[3.715s]     main()
+[3.715s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[3.715s]     raise e
+[3.715s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[3.715s]     package = parse_package_string(
+[3.716s]               ^^^^^^^^^^^^^^^^^^^^^
+[3.716s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[3.716s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[3.716s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/stewart/Repositories/pincer/src/arctos_moveit/package.xml':
+[3.716s] Error(s):
+[3.716s] - The manifest of package "arctos_moveit" (with format version 3) must not contain the following tags: run_depend
+[3.716s] - Please replace <run_depend> tags with <exec_depend> tags.
+[3.717s] Error in sys.excepthook:
+[3.717s] Traceback (most recent call last):
+[3.717s]   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+[3.718s]     return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+[3.718s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[3.718s]   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook
+[3.718s]     os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"
+[3.719s]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[3.719s] FileExistsError: [Errno 17] File exists: '/var/crash/_opt_ros_jazzy_share_ament_cmake_core_cmake_core_package_xml_2_cmake.py.1000.crash'
+[3.719s] 
+[3.719s] Original exception was:
+[3.719s] Traceback (most recent call last):
+[3.719s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[3.719s]     main()
+[3.719s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[3.719s]     raise e
+[3.719s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[3.719s]     package = parse_package_string(
+[3.719s]               ^^^^^^^^^^^^^^^^^^^^^
+[3.719s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[3.719s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[3.719s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/stewart/Repositories/pincer/src/arctos_moveit/package.xml':
+[3.719s] Error(s):
+[3.719s] - The manifest of package "arctos_moveit" (with format version 3) must not contain the following tags: run_depend
+[3.719s] - Please replace <run_depend> tags with <exec_depend> tags.
+[3.775s] -- Configuring incomplete, errors occurred!
+[3.775s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[3.775s]   execute_process(/usr/bin/python3
+[3.775s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[3.775s]   /home/stewart/Repositories/pincer/src/arctos_moveit/package.xml
+[3.775s]   /home/stewart/Repositories/pincer/build/arctos_moveit/ament_cmake_core/package.cmake)
+[3.775s]   returned error code 1
+[3.775s] Call Stack (most recent call first):
+[3.776s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[3.776s]   /opt/ros/jazzy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[3.776s]   CMakeLists.txt:44 (ament_lint_auto_find_test_dependencies)
+[3.776s] 
+[3.776s] [0m
+[3.781s] Invoked command in '/home/stewart/Repositories/pincer/build/arctos_moveit' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stewart/Repositories/pincer/src/arctos_moveit -DCMAKE_INSTALL_PREFIX=/home/stewart/Repositories/pincer/install/arctos_moveit

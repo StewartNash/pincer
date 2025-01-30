@@ -1,0 +1,15 @@
+/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/ament_index/resource_index/package_run_dependencies/arctos_urdf_description
+/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/ament_index/resource_index/parent_prefix_path/arctos_urdf_description
+/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/environment/ament_prefix_path.sh
+/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/environment/ament_prefix_path.dsv
+/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/environment/path.sh
+/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/environment/path.dsv
+/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/local_setup.bash
+/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/local_setup.sh
+/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/local_setup.zsh
+/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/local_setup.dsv
+/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/package.dsv
+/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/ament_index/resource_index/packages/arctos_urdf_description
+/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/cmake/arctos_urdf_descriptionConfig.cmake
+/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/cmake/arctos_urdf_descriptionConfig-version.cmake
+/home/stewart/Repositories/pincer/install/arctos_urdf_description/share/arctos_urdf_description/package.xml

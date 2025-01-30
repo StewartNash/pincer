@@ -1,0 +1,44 @@
+[0.015s] Invoking command in '/home/stewart/Repositories/pincer/build/arctos_config': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stewart/Repositories/pincer/src/arctos_config -DCMAKE_INSTALL_PREFIX=/home/stewart/Repositories/pincer/install/arctos_config
+[0.141s] -- The C compiler identification is GNU 13.3.0
+[0.247s] -- The CXX compiler identification is GNU 13.3.0
+[0.269s] -- Detecting C compiler ABI info
+[0.354s] -- Detecting C compiler ABI info - done
+[0.363s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.363s] -- Detecting C compile features
+[0.363s] -- Detecting C compile features - done
+[0.372s] -- Detecting CXX compiler ABI info
+[0.460s] -- Detecting CXX compiler ABI info - done
+[0.468s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.468s] -- Detecting CXX compile features
+[0.469s] -- Detecting CXX compile features - done
+[0.470s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.624s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.747s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.813s] Error parsing '/home/stewart/Repositories/pincer/src/arctos_config/package.xml':
+[3.722s] Traceback (most recent call last):
+[3.723s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[3.723s]     main()
+[3.723s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[3.723s]     raise e
+[3.723s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[3.723s]     package = parse_package_string(
+[3.723s]               ^^^^^^^^^^^^^^^^^^^^^
+[3.723s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[3.724s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[3.724s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/stewart/Repositories/pincer/src/arctos_config/package.xml':
+[3.724s] Error(s):
+[3.724s] - The manifest of package "arctos_config" (with format version 3) must not contain the following tags: run_depend
+[3.724s] - Please replace <run_depend> tags with <exec_depend> tags.
+[3.782s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[3.782s]   execute_process(/usr/bin/python3
+[3.782s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[3.782s]   /home/stewart/Repositories/pincer/src/arctos_config/package.xml
+[3.782s]   /home/stewart/Repositories/pincer/build/arctos_config/ament_cmake_core/package.cmake)
+[3.782s]   returned error code 1
+[3.782s] Call Stack (most recent call first):
+[3.782s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[3.782s]   /opt/ros/jazzy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[3.782s]   CMakeLists.txt:23 (ament_lint_auto_find_test_dependencies)
+[3.782s] 
+[3.782s] [0m
+[3.782s] -- Configuring incomplete, errors occurred!
