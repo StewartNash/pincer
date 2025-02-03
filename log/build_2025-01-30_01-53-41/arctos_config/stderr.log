@@ -1,8 +1,0 @@
-[31mCMake Error at CMakeLists.txt:28 (install):
-  install DIRECTORY given no DESTINATION!
-
-[0m
-[31mCMake Error at CMakeLists.txt:30 (install):
-  install DIRECTORY given no DESTINATION!
-
-[0m

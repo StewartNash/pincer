@@ -1,2 +1,0 @@
-Invoking command in '/home/stewart/Repositories/pincer/build/arctos_moveit': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stewart/Repositories/pincer/src/arctos_moveit -DCMAKE_INSTALL_PREFIX=/home/stewart/Repositories/pincer/install/arctos_moveit
-Invoked command in '/home/stewart/Repositories/pincer/build/arctos_moveit' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stewart/Repositories/pincer/src/arctos_moveit -DCMAKE_INSTALL_PREFIX=/home/stewart/Repositories/pincer/install/arctos_moveit

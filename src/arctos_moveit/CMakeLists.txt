@@ -73,14 +73,16 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   std_msgs
  )
 
-ament_package(
-  AMENT_DEPENDS
-    moveit_core
-    moveit_ros_planning_interface
-    interactive_markers
-  DEPENDS
-    EIGEN3
-)
+#ament_package(
+#  AMENT_DEPENDS
+#    moveit_core
+#    moveit_ros_planning_interface
+#    interactive_markers
+#  DEPENDS
+#    EIGEN3
+#)
+
+ament_package()
 
 ###########
 ## Build ##
@@ -96,8 +98,11 @@ add_executable(move_group_1 src/move_group_interface_coor_1.cpp)
 
 add_dependencies(moveit_convert moveo_moveit_generate_messages_cpp)
 ## Specify libraries to link a library or executable target against
-ament_install_python(PROGRAMS scripts/moveo_objrec_publisher.py
-  DESTINATION ${AMENT_PACKAGE_BIN_DESTINATION})
+#ament_install_python(PROGRAMS scripts/moveo_objrec_publisher.py
+#  DESTINATION ${AMENT_PACKAGE_BIN_DESTINATION})
+  
+#ament_python_install_package(PROGRAMS scripts/moveo_objrec_publisher.py
+#  DESTINATION ${AMENT_PACKAGE_BIN_DESTINATION})
 
 target_link_libraries(moveit_convert
   ${ament_LIBRARIES}

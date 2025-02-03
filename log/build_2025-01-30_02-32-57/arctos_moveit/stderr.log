@@ -1,8 +1,0 @@
-[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package.cmake:74 (message):
-  ament_package() called with unused arguments:
-  AMENT_DEPENDS;moveit_core;moveit_ros_planning_interface;interactive_markers;DEPENDS;EIGEN3
-Call Stack (most recent call first):
-  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package.cmake:68 (_ament_package)
-  CMakeLists.txt:76 (ament_package)
-
-[0m
