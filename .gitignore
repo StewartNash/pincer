@@ -1,4 +1,14 @@
-build/
-devel/
-install/
-log/
+# Ignore buld and install artifacts
+pincer/build/
+pincer/devel/
+pincer/install/
+pincer/log/
+
+moveit/build/
+moveit/devel/
+moveit/install/
+moveit/log/
+
+# Ignore cloned src content
+moveit/src/*
+!moveit/src/.gitkeep

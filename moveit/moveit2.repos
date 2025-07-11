@@ -1,0 +1,41 @@
+repositories:
+  src/moveit2:
+    type: git
+    url: https://github.com/moveit/moveit2
+    version: 950322e0018b86a64258ebc1241b5d0509331ef7
+  src/moveit2_tutorials:
+    type: git
+    url: https://github.com/moveit/moveit2_tutorials
+    version: 27b5ed0232cd08de9631d26e823dccc6e8766513
+  src/moveit_msgs:
+    type: git
+    url: https://github.com/moveit/moveit_msgs
+    version: 900ebbea1c80470679f6cbfacfea44fd6ebbdfb9
+  src/moveit_resources:
+    type: git
+    url: https://github.com/moveit/moveit_resources
+    version: 595f04ee736c9547ab1e7253e46005107277e36c
+  src/moveit_task_constructor:
+    type: git
+    url: https://github.com/moveit/moveit_task_constructor.git
+    version: 7e1303dee143112b21a9568568e27a3e02d0449e
+  src/moveit_visual_tools:
+    type: git
+    url: https://github.com/moveit/moveit_visual_tools
+    version: 89aa0b65d842bd55f12f77760cfe97b8407745c0
+  src/ros2_kortex:
+    type: git
+    url: https://github.com/Kinovarobotics/ros2_kortex.git
+    version: 309f9c9d4a277970e542e5ac1fe260ced0630f65
+  src/ros2_robotiq_gripper:
+    type: git
+    url: https://github.com/PickNikRobotics/ros2_robotiq_gripper.git
+    version: 12e623212e6891a5fcc9af94d67b07e640916394
+  src/rviz_visual_tools:
+    type: git
+    url: https://github.com/PickNikRobotics/rviz_visual_tools.git
+    version: b49117c28014574729289d12a43af1c123921e89
+  src/serial:
+    type: git
+    url: https://github.com/tylerjw/serial.git
+    version: d8d160678aa0b31cdf467c052b954fa287cc6cdf
