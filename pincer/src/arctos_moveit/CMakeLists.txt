@@ -13,8 +13,7 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
-find_package(roscpp REQUIRED)
-find_package(rospy REQUIRED)
+find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(moveit_core REQUIRED)
@@ -39,6 +38,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   DEPENDENCIES sensor_msgs std_msgs
 )
 
+include_directories(${CMAKE_CURRENT_BINARY_DIR})
+
 # Include directories
 include_directories(
   SYSTEM ${Boost_INCLUDE_DIR} ${EIGEN3_INCLUDE_DIRS}
@@ -47,6 +48,11 @@ include_directories(
 # Executables
 add_executable(moveit_convert src/moveit_convert.cpp)
 add_executable(move_group_1 src/move_group_interface_coor_1.cpp)
+
+rosidl_get_typesupport_target(cpp_typesupport_target
+  ${PROJECT_NAME} "rosidl_typesupport_cpp")
+
+target_link_libraries(moveit_convert "${cpp_typesupport_target}")
 
 # Link dependencies
 ament_target_dependencies(moveit_convert
@@ -72,6 +78,8 @@ ament_target_dependencies(move_group_1
   geometric_shapes
   moveit_visual_tools
 )
+
+ament_export_dependencies(rosidl_default_runtime)
 
 # Install scripts
 install(PROGRAMS

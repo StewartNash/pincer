@@ -1,127 +1,89 @@
-#include "ros/ros.h"
-#include "sensor_msgs/JointState.h"
-#include "moveo_moveit/ArmJointState.h"
-#include "math.h"
+#include <rclcpp/rclcpp.hpp>
+#include <sensor_msgs/msg/joint_state.hpp>
+#include "arctos_moveit/msg/arm_joint_state.hpp"
+#include <cmath>
 
-moveo_moveit::ArmJointState arm_steps;
-moveo_moveit::ArmJointState total;
-int stepsPerRevolution[6] = {32800,18000,72000,3280,14400,0};  // microsteps/revolution (using 16ths) from observation, for each motor
-int joint_status = 0;
-double cur_angle[6];
-int joint_step[6];
-double prev_angle[6] = {0,0,0,0,0,0}; 
-double init_angle[6] = {0,0,0,0,0,0};
-double total_steps[6] = {0,0,0,0,0,0};
-int count = 0;
+using std::placeholders::_1;
 
-
-//keep a running sum of all the step counts and use that as the final step to send to arduino accelstepper
-
-// int angle_to_steps(double x)
-// {
-//   float steps;
-//   steps=((x / M_PI)*stepsPerRevolution)+0.5; // (radians)*(1 revolution/PI radians)*(200 steps/revolution)
-//   return steps;
-// }
-
-//command callback (for position) function 
-void cmd_cb(const sensor_msgs::JointState& cmd_arm)
+class MoveitConvertNode : public rclcpp::Node
 {
-  if (count==0){
-    prev_angle[0] = cmd_arm.position[0];
-    prev_angle[1] = cmd_arm.position[1];
-    prev_angle[2] = cmd_arm.position[2];
-    prev_angle[3] = cmd_arm.position[3];
-    prev_angle[4] = cmd_arm.position[4];
-    prev_angle[5] = cmd_arm.position[5];
+public:
+  MoveitConvertNode()
+  : Node("moveit_convert")
+  {
+    RCLCPP_INFO(this->get_logger(), "Starting moveit_convert node");
 
-    init_angle[0] = cmd_arm.position[0];
-    init_angle[1] = cmd_arm.position[1];
-    init_angle[2] = cmd_arm.position[2];
-    init_angle[3] = cmd_arm.position[3];
-    init_angle[4] = cmd_arm.position[4];
-    init_angle[5] = cmd_arm.position[5];
+    steps_per_revolution_ = {32800, 18000, 72000, 3280, 14400, 0};
+    prev_angle_.fill(0.0);
+    init_angle_.fill(0.0);
+    total_steps_.fill(0.0);
+
+    subscriber_ = this->create_subscription<sensor_msgs::msg::JointState>(
+      "/move_group/fake_controller_joint_states", 10,
+      std::bind(&MoveitConvertNode::cmdCallback, this, _1)
+    );
+
+    publisher_ = this->create_publisher<arctos_moveit::msg::ArmJointState>("joint_steps", 10);
   }
 
-  // ros::NodeHandle nh;
-  // ros::Subscriber sub = nh.subscribe("/move_group/fake_controller_joint_states",1000,cmd_cb);
-  // ros::Publisher pub = nh.advertise<moveo_moveit::ArmJointState>("joint_steps",50);
-  ROS_INFO_STREAM("Received /move_group/fake_controller_joint_states");
-    
-  // arm_steps.position1 = (cmd_arm.position[0]*stepsPerRevolution[0]/M_PI+0.5)-prev_angle[0];
-  // arm_steps.position2 = (cmd_arm.position[1]*stepsPerRevolution[1]/M_PI+0.5)-prev_angle[1];
-  // arm_steps.position3 = (cmd_arm.position[2]*stepsPerRevolution[2]/M_PI+0.5)-prev_angle[2];
-  // arm_steps.position4 = (cmd_arm.position[3]*stepsPerRevolution[3]/M_PI+0.5)-prev_angle[3];
-  // arm_steps.position5 = (cmd_arm.position[4]*stepsPerRevolution[4]/M_PI+0.5)-prev_angle[4];
-  // arm_steps.position6 = (cmd_arm.position[5]*stepsPerRevolution[5]/M_PI+0.5)-prev_angle[5];
+private:
+  void cmdCallback(const sensor_msgs::msg::JointState::SharedPtr msg)
+  {
+    if (!initialized_)
+    {
+      for (int i = 0; i < 6; ++i)
+      {
+        prev_angle_[i] = msg->position[i];
+        init_angle_[i] = msg->position[i];
+      }
+      initialized_ = true;
+    }
 
-  //compute relative step count to move each joint-- only works if all joint_angles start at 0
-  //otherwise, we need to set the current command to the initial joint_angles
-  //ROS_INFO_NAMED("test", "cmd_arm.position[4]: %f, prev_angle[4]: %f, init_angle[4]: %f", cmd_arm.position[4], prev_angle[4], init_angle[4]);
-  //ROS_INFO_NAMED("test", "arm_steps.position5 #1: %f", (cmd_arm.position[4]-prev_angle[4])*stepsPerRevolution[4]/M_PI);
+    arctos_moveit::msg::ArmJointState step_msg;
 
-  arm_steps.position1 = (int)((cmd_arm.position[0]-prev_angle[0])*stepsPerRevolution[0]/(2*M_PI));
-  arm_steps.position2 = (int)((cmd_arm.position[1]-prev_angle[1])*stepsPerRevolution[1]/(2*M_PI));
-  arm_steps.position3 = (int)((cmd_arm.position[2]-prev_angle[2])*stepsPerRevolution[2]/(2*M_PI));
-  arm_steps.position4 = (int)((cmd_arm.position[3]-prev_angle[3])*stepsPerRevolution[3]/(2*M_PI));
-  arm_steps.position5 = (int)((cmd_arm.position[4]-prev_angle[4])*stepsPerRevolution[4]/(2*M_PI));
-  arm_steps.position6 = (int)((cmd_arm.position[5]-prev_angle[5])*stepsPerRevolution[5]/(2*M_PI));
+    step_msg.position1 = toSteps(0, msg->position[0] - prev_angle_[0]);
+    step_msg.position2 = toSteps(1, msg->position[1] - prev_angle_[1]);
+    step_msg.position3 = toSteps(2, msg->position[2] - prev_angle_[2]);
+    step_msg.position4 = toSteps(3, msg->position[3] - prev_angle_[3]);
+    step_msg.position5 = toSteps(4, msg->position[4] - prev_angle_[4]);
+    step_msg.position6 = toSteps(5, msg->position[5] - prev_angle_[5]);
 
-  ROS_INFO_NAMED("test", "arm_steps.position5 #2: %d", arm_steps.position5);
+    // Optional: Keep track of running total
+    total_msg_.position1 += step_msg.position1;
+    total_msg_.position2 += step_msg.position2;
+    total_msg_.position3 += step_msg.position3;
+    total_msg_.position4 += step_msg.position4;
+    total_msg_.position5 += step_msg.position5;
 
-  if (count!=0){
-    prev_angle[0] = cmd_arm.position[0];
-    prev_angle[1] = cmd_arm.position[1];
-    prev_angle[2] = cmd_arm.position[2];
-    prev_angle[3] = cmd_arm.position[3];
-    prev_angle[4] = cmd_arm.position[4];
-    prev_angle[5] = cmd_arm.position[5];
+    publisher_->publish(total_msg_);
+
+    for (int i = 0; i < 6; ++i)
+      prev_angle_[i] = msg->position[i];
+
+    RCLCPP_INFO(this->get_logger(), "Published joint step update.");
   }
 
-  //total steps taken to get to goal
-  // total_steps[0]+=arm_steps.position1;
-  // total_steps[1]+=arm_steps.position2;
-  // total_steps[2]+=arm_steps.position3;
-  // total_steps[3]+=arm_steps.position4;
-  // total_steps[4]+=arm_steps.position5;
+  int toSteps(int joint_index, double delta_rad)
+  {
+    return static_cast<int>((delta_rad * steps_per_revolution_[joint_index]) / (2 * M_PI));
+  }
 
-  total.position1 += arm_steps.position1;
-  total.position2 += arm_steps.position2;
-  total.position3 += arm_steps.position3;
-  total.position4 += arm_steps.position4;
-  total.position5 += arm_steps.position5;
+  std::array<int, 6> steps_per_revolution_;
+  std::array<double, 6> prev_angle_;
+  std::array<double, 6> init_angle_;
+  std::array<double, 6> total_steps_;
+  bool initialized_ = false;
 
-  ROS_INFO_NAMED("test", "total_steps[4]: %f, total: %d", total_steps[4], total.position5);
-  ROS_INFO_NAMED("test", "arm_steps.position5 #3: %d", arm_steps.position5);
-
-  ROS_INFO_STREAM("Done conversion to /joint_steps");
-  joint_status = 1;
-  count=1;
-}
+  rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr subscriber_;
+  rclcpp::Publisher<arctos_moveit::msg::ArmJointState>::SharedPtr publisher_;
+  arctos_moveit::msg::ArmJointState total_msg_;
+};
 
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "moveo_moveit");
-  ros::NodeHandle nh;
-  ROS_INFO_STREAM("In main function");
-  ros::Subscriber sub = nh.subscribe("/move_group/fake_controller_joint_states",1000,cmd_cb);
-  ros::Publisher pub = nh.advertise<moveo_moveit::ArmJointState>("joint_steps",50);
-  
-  ros::Rate loop_rate(20);
-
-  while (ros::ok())
-  {
-    if(joint_status==1)
-    {
-      joint_status = 0;
-      //pub.publish(arm_steps);
-      pub.publish(total);
-      ROS_INFO_STREAM("Published to /joint_steps");
-    }
-    ros::spinOnce();
-    loop_rate.sleep();  
-  }
-
-  //ros::spin();
+  rclcpp::init(argc, argv);
+  rclcpp::spin(std::make_shared<MoveitConvertNode>());
+  rclcpp::shutdown();
   return 0;
 }
+
