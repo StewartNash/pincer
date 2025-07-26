@@ -1,19 +1,26 @@
-# Arctos Robotic Arm (ROS Packages)
+# Pincer (version of Arctos robotic arm) (ROS 2 Packages)
 
-This repository contains ROS packages for the Arctos robotic arm, enabling motion planning, execution, and simulation in both virtual and real environments.
+This repository contains ROS packages for the Pincer, a version of the Arctos robotic arm, enabling motion planning, execution, and simulation in both virtual and real environments.
 initially forked from [jesseweisberg/moveo_ros](https://github.com/jesseweisberg/moveo_ros) and edited to match the Arctos 6 axis robotic arm. 
 ## How to Use:
 
 ### Setting Up Arctos Simulation with Motion Planning
 
-1. Make sure you have ROS properly installed with a working workspace. This repository assumes ROS Melodic on Ubuntu 18.04, so make any necessary adjustments if you are using a different configuration. Place the 'arctos_ros' package in the 'src' directory of your catkin workspace.
+1. Please have ROS 2 properly installed and also have a functional workspace. This repository currently uses ROS 2 Jazzy on Ubuntu 24.04.
+```
+source /opt/ros/jazzy/setup.bash
+```
 
-2. To plan and execute trajectories for the Arctos arm in simulation (using RVIZ with Moveit plugin), run the following terminal command:
+2. If not previously built, please build the 'moveit' and 'pincer' workspaces. Please see the MoveIt 2 documentation for additional information on building 'moveit'.
+
+3. Source the setup files and launch the demo to plan and execute trajectories for Pincer via simulation (using RVIZ with Moveit plugin).
    ```
-   roslaunch arctos_config demo.launch
+   source moveit/install/setup.bash
+   source pincer/install/setup.bash
+   ros2 launch arctos_config demo.launch.py
    ```
 
-3. Once the window loads, enable "Allow Approximate IK Solutions" in the bottom-left corner. Navigate to the "Planning" tab in the Motion Planning panel of RVIZ. You can set a new goal state by either dragging the interactive marker (the light blue ball at the end effector) or selecting one under "Select Goal State." After updating the goal state, clicking "Plan and Execute" will generate and execute the trajectory from the start state to the updated goal state.
+4. Once the window loads, enable "Allow Approximate IK Solutions" in the bottom-left corner. Navigate to the "Planning" tab in the Motion Planning panel of RVIZ. You can set a new goal state by either dragging the interactive marker (the light blue ball at the end effector) or selecting one under "Select Goal State." After updating the goal state, clicking "Plan and Execute" will generate and execute the trajectory from the start state to the updated goal state.
 
 ### Controlling the Real Robot, Synchronized with the Simulated Arm's Trajectories
 4. Make sure to download the AccelStepper library ([AccelStepper Library Download](http://www.airspayce.com/mikem/arduino/AccelStepper/AccelStepper-1.57.zip)) and the ros_lib library ([rosserial-arduino tutorial](http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup)) in your Arduino development environment.
@@ -70,3 +77,7 @@ Here, you'll find the configuration files for Moveit, a motion planning framewor
   - More information can be found on the ROS wiki: 
     - In Section 2.2 here: (http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup)
     - (http://wiki.ros.org/rosserial/Tutorials/Adding%20Other%20Messages)
+    
+## TODO
+This repository is still in development, but it is behind one version of ROS 2 in Jazzy Jalisco. Development will hopefully concluded by the end of September 2025 and the repository can be updated to use the Kilted Kaiju release of ROS 2.
+
